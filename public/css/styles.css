@@ -6,6 +6,7 @@
   min-width: 320px;
 }.bg-first{
   background-color: #FF914D;
+  /* background-color: #ff914de8; */
 }.bg-second{
   background-color: #30c3cd;
 }.bg-third{
@@ -22,6 +23,11 @@
   color:#1D3D59;
 }
 
+.fs-small{
+  font-size: 10px
+}.fs-medium{
+  font-size: 16px;
+}
 
 #company-logo, #current-date{
   font-size: .90rem;
@@ -169,10 +175,6 @@
   background-color: #0464eb00;
 }
 
-
-
-
-
 .accordion-button::after {
   flex-shrink: 0;
   width: 1.25rem;
@@ -198,11 +200,8 @@
   transition: transform .2s ease-in-out;
 }.list-group-item:hover, .list-group-item:focus, .list-group-item:active {
   background-color: rgba(128, 128, 128, 0.137) ;
+  
 }
-
-
-
-
 
 
 
