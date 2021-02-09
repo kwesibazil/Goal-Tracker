@@ -1,0 +1,29 @@
+{
+  "name": "incrementia",
+  "version": "1.0.0",
+  "description": "Goal Tracking Web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwesibazil/Incrementia-verion2.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Bootstrap-5"
+  ],
+  "author": "Kwesi Bazil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kwesibazil/Incrementia-verion2/issues"
+  },
+  "homepage": "https://github.com/kwesibazil/Incrementia-verion2#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "bootstrap-icons": "^1.3.0",
+    "glider-js": "^1.7.3",
+    "hover.css": "^2.3.2"
+  }
+}

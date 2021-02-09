@@ -1,0 +1,400 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}body{
+  min-width: 320px;
+}.bg-first{
+  background-color: #FF914D;
+}.bg-second{
+  background-color: #30c3cd;
+}.bg-third{
+  background-color: #F3B800;
+}.bg-fourth{
+  background-color:  #508104;
+}.bg-fifth{
+  background-color:  #1D3D59;
+}.text-first{
+  color: #FF914D;
+}.text-third{
+  color: #F3B800;
+}.text-fifth{
+  color:#1D3D59;
+}
+
+
+#company-logo, #current-date{
+  font-size: .90rem;
+}
+.nav-icons svg{   
+  fill:#FF914D;
+}
+.action-icons {
+  border-color: #FF914D !important;
+  fill: #FF914D;
+}
+
+
+#sideNav li:hover svg, #sideNav li:focus svg,  #sideNav li:active svg {       /*changes the colour of icons in the vertical navbar*/
+ fill: #1D3D59;
+}.no-glow{                                                                     /*overrides bootstrap default behavior of addition a border on nav-links classes*/
+  box-shadow:none !important; 
+  outline:​0px !important; 
+}.fixed-to-bottom{                                                             /*fixed an element to the bottom of a container*/     
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+/*modal*/
+.modal-box{
+  z-index:4 ;
+  position: fixed;
+  background-color: #f7f7f7;
+}.modal-hidden{  
+  top: 0;
+  left: 0;
+  width: 0%; 
+  z-index: 2;
+  overflow: auto; 
+  position: fixed; 
+}.modal-visible{
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.5s linear;
+}
+
+
+/*vertical Menubar*/
+.sideNav-hidden{
+  top: 0;
+  width: 250px;
+  height: 100%;
+  transition: width 0.3s linear; 
+  transform: translate(-100%);
+  transition: 0.5s;
+}.sideNav-hidden div div h3{ 
+  margin: 0;
+  color: black;
+  font-size: 1.2rem;
+  padding-bottom: 0px;
+}.sideNav-visible{
+  transform: translate(0);
+  transition: 0.5s;
+}#sideNav div div  h3{
+  font-size: 1.2rem;
+  color:black;
+  padding-bottom: 0px;
+}
+
+
+
+/*Action Button Pop Menu*/
+/* 
+#action-btn{
+  width: 0;
+  height: 0;
+} */
+.action-btn-visible{
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  right: 15px;
+  bottom: 85px;
+  z-index: 1;
+  position: fixed;
+  /* fill: #1d3d59d0; */
+  fill: black;
+  transition: height 0.4s; 
+}
+.action-btn-hidden {
+  height: 0;
+  transition: all 0.3s
+}.actionMenu-hidden{
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  transition: 0.5s;
+  transition: height 0.3s linear;
+  transform: translate(0%);
+}.actionMenu-visible{
+  height: 35%;
+  transform: translate(0);
+  transition: 0.5s;
+}
+
+/*cards*/
+#add-new-card{
+  width: 60px;
+}.card-icon svg{
+  width: 45px;
+  /* fill: #1D3D59; */
+}
+
+.goal-desc{
+  max-height: 23px;
+  overflow: hidden;
+  color: #0000008a;
+}.goal-title{
+  max-height: 19px;
+  overflow: hidden;
+  padding-bottom: px;
+}
+ .goal-date{
+  font-size: 80%;
+} 
+
+@media screen and (max-width: 419px) {
+  .goal-date{
+    margin-top: 5px;
+    font-size: 55%;
+    line-height: normal;
+  } 
+}
+
+/*According override bootstrap css*/ 
+.accordion{
+  max-height: 500px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}.accordion::-webkit-scrollbar {
+  display: none;
+}.accordion div h2 button:hover, .accordion div h2 button:focus, .accordion div h2 button:active{
+  background-color: rgba(128, 128, 128, 0.151);
+}.accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: #0464eb00;
+}
+
+
+
+
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url(../img/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/chevron-down.svg);
+  transform: rotate(180deg);
+}.accordion-button::before {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: auto;
+  content: "";
+  background-image: url(../img/trophy-fill.svg);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}.list-group-item:hover, .list-group-item:focus, .list-group-item:active {
+  background-color: rgba(128, 128, 128, 0.137) ;
+}
+
+
+
+
+
+
+
+/*goal*/
+/* .goal-content{
+  height: 50px;
+  max-height: 50px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  IE and Edge
+  scrollbar-width: none;  Firefox
+}
+.goal-content::-webkit-scrollbar {
+  display: none;
+}.goal-content li{
+  list-style-type: square !important
+} */
+
+/* 
+.card-header
+  margin-bottom: 1px;
+  border-bottom: 2px solid;
+  background-color: white;
+ 
+
+} */
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/* .card-content{
+  /* height: 120px;  *
+}
+
+.goal-content{
+  /*width: 170px;*/ /*the width is control in the js*
+  height: 20px; 
+  opacity: 0.7;
+}
+
+
+.progress{
+  height: 10px;
+}
+
+.progress div{
+  font-size: .50rem;
+}
+
+
+.card-head{
+  text-align: center;
+  padding: 5px 0px;
+  font-size: 22px;
+  border-bottom: 2px solid rgb(85, 84, 84);
+}
+
+.card-body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.card-body h5{
+  font-size: .90rem;
+  font-weight: bold;
+}
+
+
+.card-icon svg{
+  width: 50px;
+  fill: #1D3D59;
+
+}
+
+
+.action-btn-hide{
+  height: 0;
+  transition: all 0.4s
+}
+
+ */
+
+
+
+
+
+/* 
+
+.action-btn-show{
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  right: 15px;
+  bottom: 75px;
+  position: fixed;
+  fill: #1d3d59d0; 
+  /* fill: #FF914D; *
+  transition: height 0.4s;
+
+}
+
+
+
+/*modal*
+.hidden{  
+  top: 0;
+  left: 0;
+  width: 0%; 
+  z-index: 2;
+  overflow: auto; 
+  position: fixed; 
+}.visible{
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s linear;
+}
+
+
+/*side nav*
+.sideNav-content{
+  height: 100%;
+}.sideNav-header h3{
+  margin: 0;
+  color: black;
+  font-size: 1.2rem;
+  padding-bottom: 0px;
+}.sideNav-body{
+  height: 100%;
+}.sideNav-hidden{
+  width: 250px;
+  height: 100%;   /*overflow: auto;*
+  position: fixed;
+  transition: width 0.3s linear; /*remove modal time*
+  background-color: #f7f7f7;
+  transform: translate(-100%);
+  transition: 0.5s;
+}.sideNav-visible{
+  transform: translate(0);
+  transition: 0.5s;
+}
+
+
+
+
+/*side nav*
+.optionsMenu-hidden{
+  width: 100%;
+  height: 0%;
+  position: fixed;
+  transition: 0.5s;
+  background-color: #f8f7f7;
+  transition: height 0.3s linear; /*remove modal time*
+  transform: translate(0%);
+}
+.optionsMenu-visible{
+  height: 35%;
+  transform: translate(0);
+  transition: 0.5s;
+}
+
+
+
+/*modal*
+.modal-hidden{  
+  top: 0;
+  left: 0;
+  width: 0%; 
+  z-index: 2;
+  overflow: auto; 
+  position: fixed; 
+}.modal-visible{
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s linear;
+}
+
+.modal-dialog{
+  position: fixed;
+  transition: 0.5s;
+  background-color: #f7f7f7;
+}
+
+#sideNav{
+  width: 250px;
+  height: 100%;   /*overflow: auto;*
+  transition: 0.5s;
+  transform: translate(-100%);
+  transition: width 0.3s linear; 
+}#sideNav div div h3{
+  margin: 0;
+  color: black;
+  font-size: 1.2rem;
+  padding-bottom: 0px;
+}
+
+*/ */
