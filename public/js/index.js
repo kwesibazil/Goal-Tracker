@@ -80,5 +80,3 @@ function drawChart() {
   var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
   chart.draw(data, options);
 }
-
-
