@@ -59,17 +59,22 @@
       </nav>
     </header>
 
-    <!--Google chart-->
-    <section class="shadow p-3 pt-2 my-2 border">
-      <h2 class="fs-5 fw-bold text-dark">Overview</h2>
-      <div  class="border" id="barchart_values"" style="width: auto;"></div>
-    </section>
-  
+    <!--main-content--> 
+  <div class="container-fluid p-2">
+      <!--Google chart-->
+      <section class="shadow p-3 pt-2 my-2">
+        <h2 class="fs-5 fw-bold text-dark">Overview</h2>
+        <div  class="border" id="barchart_values"" style="width: auto;"></div>
+      </section>
     
+      <section class="shadow p-3 pt-2 my-2">
 
-    <div class="container-fluid p-2  border">
-      <section class="shadow p-3 pt-2">
-        <div class="row  bg-light w-75 m-auto mt-2  border rounded-pill ">
+        <div class="d-flex p-2 my-2 bg-dark ">
+          <h2 class="fs-5 m-0 text-light fw-bold">List</h2>
+          <a href="#" class="btn btn-sm  py-0 ms-auto btn-light text-end">add new</a>
+        </div>
+
+        <div class="row  bg-light w-75 m-auto mt-3  border rounded-pill ">
           <div class="col-3 text-center bg-dark rounded-pill">
             <a href="#" class="btn text-white fs-medium fw-bold no-glow">All</a>
           </div>
@@ -80,14 +85,11 @@
             <a href="#" class="btn fw-bold no-glow">Weekly</a>
           </div>
         </div>
-  
+
         <!--KPI LIST-->
         <div class="my-3 p-1 ">
-          <div class="d-flex  p-2 mb-2 bg-dark">
-            <h2 class="fs-5 m-0 text-light fw-bold">List</h2>
-            <a href="#" class="btn btn-sm  py-0 ms-auto btn-light text-end">add new</a>
-          </div>
-  
+        
+
           <div>
             <div class="p- ms-2 mb-2 border-bottom">
             <h5 class="fs-medium m-0">Jan 3</h5>
@@ -205,9 +207,10 @@
           </div>
             
         </div> <!-- dates -->
-  
+
       </section>
-    </div>
+
+  </div>
   
     <!--Modal-->
     <div class="modal-hidden " id="modal">   
