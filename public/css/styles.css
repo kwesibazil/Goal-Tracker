@@ -199,18 +199,30 @@
   background-size: 1.25rem;
   transition: transform .2s ease-in-out;
 }.list-group-item:hover, .list-group-item:focus, .list-group-item:active {
-  background-color: rgba(128, 128, 128, 0.137) ;
-  
+  background-color: rgba(128, 128, 128, 0.137) ; 
 }
 
 
 .days div{
-  font-size: 10px;
+  font-size: 13px;
   padding: 5px 10px;
   width: calc(100% / 7);
   text-align: center;
 }
 
+.days div:hover:not(.today) {
+  background-color: #2626261e;
+}
+
 .prev-date, .next-date{
   opacity: 0.5;
+}
+
+.weekdays{
+  font-size: 14px;
+}
+
+.weekdays div {
+  width: calc(100% / 7);
+  text-align: center;
 }

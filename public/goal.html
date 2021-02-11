@@ -59,26 +59,31 @@
     </nav>
   </header>
 
-
   <div class="container-fluid p-2">
-    <!--Google chart-->
 
+    <!-- <section>
+      <div class="d-grid gap-2 my-3">
+        <button class="btn btn-dark" type="button">create new goal</button>
+      </div>
+    </section> -->
+
+    <!--calender-->
     <section class="shadow p-3 pt-2 my-2 ">  
       <div class=" border">
-        <div class="bg-secondary d-flex px-3 justify-content-between">
+        <div class="bg-dark text-light d-flex px-3 justify-content-between">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left prev align-self-center" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
           </svg>
           <div class="date">
-            <h1 class="fs-medium m-1 text-center">February</h1>
-            <p class="fs-small text-center mb-2">Thursday 10, 2021</p>
+            <h1 class="fs-5 m-1 text-center">February</h1>
+            <p class="fs-medium text-center mb-2">Thursday 10, 2021</p>
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right next align-self-center" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
           </svg>
         </div>
       
-        <div class=" d-flex fs-small justify-content-around">
+        <div class="weekdays d-flex  ">
           <div>Sun</div>
           <div>Mon</div>
           <div>Tue</div>
@@ -134,35 +139,171 @@
       </div>
     </section>
 
-    <!-- 
-
-      `<div class="container">
-        <div class="calendar">
-          <div class="month">
-            <i class="fas fa-angle-left prev"></i>
-            <div class="date">
-              <h1></h1>
-              <p></p>
-            </div>
-            <i class="fas fa-angle-right next"></i>
-          </div>
-          <div class="weekdays">
-            <div>Sun</div>
-            <div>Mon</div>
-            <div>Tue</div>
-            <div>Wed</div>
-            <div>Thu</div>
-            <div>Fri</div>
-            <div>Sat</div>
-          </div>
-          
+    <section class="shadow p-3 pt-2 my-2 ">
+      <div class="row  bg-light w-75 m-auto my-3  border rounded-pill ">
+        <div class="col-3 text-center bg-dark rounded-pill">
+          <a href="#" class="btn text-white fs-medium fw-bold no-glow">All</a>
+        </div>
+        <div class="col-4 text-center ">
+          <a href="#" class="btn  no-glow fw-bold">Recent</a>
+        </div>
+        <div class="col-4 text-center rounded-pill">
+          <a href="#" class="btn fw-bold no-glow">Completed</a>
         </div>
       </div>
 
+      <!--ACCORDING-->  
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item mb-2 border-bottom rounded-3">
+          <h2 class="accordion-header" id="headingOne">
+            
+            <button class="accordion-button collapsed no-glow border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="w-100 mx-3">
+                <div class="d-flex w-100 justify-content-between">
+                  <h6 class="fs-6 m-0 text-start col-8 goal-title">Finish the Dashboard before 12pm</h6>
+                  <small class="me-2 goal-date">3 days ago</small>
+                </div>
+                <p class="goal-desc p-0 text-start m-0">This is a sample goal we are making an app and</p>
+              </div>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body ">
+              <div class="list-group">
+                <a href="#" class="text-black-50 list-group-item list-group-item-action border-0  d-flex justify-content-between align-items-center border-0 py-1 " aria-current="true">
+                  Milestones
+                  <span >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF914D" class="bi bi-check" viewBox="0 0 16 16">
+                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class=" list-group-item list-group-item-action border-0  d-flex justify-content-between align-items-center border-0 py-1 " aria-current="true">
+                  Milestones
+                  <span >
 
+                  </span>
+                </a>
+                <a href="#" class="text-black-50 list-group-item list-group-item-action border-0  d-flex justify-content-between align-items-center border-0 py-1 " aria-current="true">
+                  Milestones
+                  <span >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF914D" class="bi bi-check" viewBox="0 0 16 16">
+                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="p-3">
+                <div class="progress w-100">
+                  <div class="progress-bar bg-first" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75% complete</div>
+                </div>
+                <p class="mx-auto fst-italic text-muted mb-0">completed 2 of 12</p>
+              </div>
+            </div>
+          </div>
+        </div><!--ACCORDING ENDS HERE--> 
 
-     -->
-  </div>  
+        <div class="accordion-item mb-2 border-bottom rounded-3">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed no-glow border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <div class="w-100 mx-3">
+                <div class="d-flex w-100 justify-content-between">
+                  <h6 class="fs-6 m-0 text-start col-8 goal-title">Finish the Dashboard before 12pm</h6>
+                  <small class="me-2 goal-date">3 days ago</small>
+                </div>
+                <p class="goal-desc p-0 text-start m-0">This is a sample goal we are making an app and</p>
+              </div>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="list-group">
+                <a href="#" class="text-black-50 list-group-item list-group-item-action border-0  d-flex justify-content-between align-items-center border-0 py-1 " aria-current="true">
+                  Milestones
+                  <span >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF914D" class="bi bi-check" viewBox="0 0 16 16">
+                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="text-black-50 list-group-item list-group-item-action border-0  d-flex justify-content-between align-items-center border-0 py-1 " aria-current="true">
+                  Milestones
+                  <span >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF914D" class="bi bi-check" viewBox="0 0 16 16">
+                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="text-black-50 list-group-item list-group-item-action border-0  d-flex justify-content-between align-items-center border-0 py-1 " aria-current="true">
+                  Milestones
+                  <span >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF914D" class="bi bi-check" viewBox="0 0 16 16">
+                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="p-3">
+                <div class="progress w-100">
+                  <div class="progress-bar bg-first" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100% complete</div>
+                </div>
+                <p class="mx-auto fst-italic text-muted mb-0">completed 7 of 7</p>
+              </div>
+            </div>
+          </div>
+        </div><!--ACCORDING ENDS HERE--> 
+
+        <div class="accordion-item  mb-2 rounded-3">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed no-glow border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <div class="w-100 mx-3">
+                <div class="d-flex w-100 justify-content-between">
+                  <h6 class="fs-6 m-0 text-start col-8 goal-title">Finish the Dashboard before 12pm</h6>
+                  <small class="me-2 goal-date">3 days ago</small>
+                </div>
+                <p class="goal-desc p-0 text-start m-0">This is a sample goal we are making an app and</p>
+              </div>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="list-group">
+                <a href="#" class=" list-group-item list-group-item-action border-0  d-flex justify-content-between align-items-center border-0 py-1 " aria-current="true">
+                  Milestones
+                  <span >
+
+                  </span>
+                </a>
+                <a href="#" class="text-black-50 list-group-item list-group-item-action border-0  d-flex justify-content-between align-items-center border-0 py-1 " aria-current="true">
+                  Milestones
+                  <span >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF914D" class="bi bi-check" viewBox="0 0 16 16">
+                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="text-black-50 list-group-item list-group-item-action border-0  d-flex justify-content-between align-items-center border-0 py-1 " aria-current="true">
+                  Milestones
+                  <span >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF914D" class="bi bi-check" viewBox="0 0 16 16">
+                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="p-3">
+                <div class="progress w-100">
+                  <div class="progress-bar bg-first" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25% complete</div>
+                </div>
+                <p class="mx-auto fst-italic text-muted mb-0">completed 5 of 25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!--ACCORDING CONTAINER ENDS HERE-->  
+    </section>
+    
+  </div><!--MAIN CONTAINERS ENDS HERE-->
 
   
   <!--Modal-->
